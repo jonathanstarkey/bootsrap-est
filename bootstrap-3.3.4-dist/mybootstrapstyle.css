@@ -10,14 +10,17 @@ body {
     left: 0;
 }
 
-#carousel-eample-generic {
+#carousel-example-generic {
     position: relative;
-    width: 100%;
-    margin: 0 auto;
+    min-height: 500px;
+    max-height: 500px;
+     
+
 }
 
 .carousel img{
     width: 100%;
+    min-height: 500px;
     max-height: 500px;
 }
 
@@ -29,7 +32,12 @@ body {
 
 .carousel button {
     margin-top: 10px;
+    margin-bottom: 20px;
 
-margin-bottom: 20px;
+}
 
+.center{
+    margin: 0 auto;
+    right: 0;
+    left: 0;
 }

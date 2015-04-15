@@ -14,20 +14,14 @@ body {
     position: relative;
     min-height: 500px;
     max-height: 500px;
-     
-
 }
+
+
 
 .carousel img{
     width: 100%;
     min-height: 500px;
     max-height: 500px;
-}
-
-.carousel p{
-    font-size: 21px;
-    line-height: 29px;
-
 }
 
 .carousel button {
@@ -38,5 +32,20 @@ body {
 
 .section-two{
     margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.section-two p{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px){
+        
+    .carousel-caption p{
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
 
 }

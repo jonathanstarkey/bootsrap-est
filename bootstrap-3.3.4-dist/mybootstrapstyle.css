@@ -16,8 +16,6 @@ body {
     max-height: 500px;
 }
 
-
-
 .carousel img{
     width: 100%;
     min-height: 500px;
@@ -41,6 +39,7 @@ body {
 }
 
 .divider-2{
+<<<<<<< HEAD
       margin: 80px 0;
 }
 
@@ -51,6 +50,11 @@ body {
 
 
 
+=======
+    margin: 80px auto;
+}
+
+>>>>>>> origin/master
 @media (min-width: 768px){
         
     .carousel-caption p{
@@ -77,5 +81,22 @@ body {
         font-size: 50px;
         line-height: 50px;
     }
+}
 
+@media (min-width: 768px){
+        
+    .section-3 h2{
+        margin-bottom: 20px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 768px){
+        
+    .section-3 p{
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
 }

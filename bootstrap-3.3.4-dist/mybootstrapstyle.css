@@ -1,5 +1,6 @@
-body {
-}
+
+
+/*------ NAVBAR ------*/
 
 .navbar {
     position: absolute;
@@ -10,13 +11,14 @@ body {
     left: 0;
 }
 
+
+/*------ CAROUSEL ------*/
+
 #carousel-example-generic {
     position: relative;
     min-height: 500px;
     max-height: 500px;
 }
-
-
 
 .carousel img{
     width: 100%;
@@ -30,6 +32,9 @@ body {
 
 }
 
+
+/*------ SECTION TWO ------*/
+
 .section-two{
     margin-top: 60px;
     margin-bottom: 20px;
@@ -40,16 +45,26 @@ body {
     margin-left: 10px;
 }
 
+
+/*------ SECTION THREE ------*/
+
 .divider-2{
       margin: 80px 0;
 }
 
+ .section-three p{
+    margin-bottom: 20px;
+ }
 
-.section-three h2{
-    margin-top: 120px;
+
+/*------ FOOTER ------*/
+
+footer{
+    margin-bottom: 50px;
 }
 
 
+/*------ RESPONSIVE ------*/
 
 @media (min-width: 768px){
         
@@ -66,6 +81,14 @@ body {
     .section-three p{
         font-size: 21px;
         line-height: 1.4em;
+    }
+
+}
+
+@media (min-width: 768px){
+        
+    .section-three h2{
+        margin-top: 120px;
     }
 
 }

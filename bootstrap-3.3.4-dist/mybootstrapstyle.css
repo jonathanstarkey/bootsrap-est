@@ -50,6 +50,11 @@
     color: #5a5a5a;
 }
 
+#parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 
 /*------ SECTION THREE ------*/
 

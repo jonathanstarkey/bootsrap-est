@@ -50,11 +50,25 @@
     color: #5a5a5a;
 }
 
-#parallax-window {
-    min-height: 400px;
-    background: transparent;
+
+
+.para-div{
+    height: 400px;
+    position: relative;
+
 }
 
+
+.twobackground {
+        height: 400px;
+    
+        background-image: url(images/Yosemite-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+
+}
 
 /*------ SECTION THREE ------*/
 

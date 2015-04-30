@@ -93,9 +93,6 @@
             
             <div class="container" >
                 <ul class="row">
-                    <div class="container-fluid para-div scene" id="scene">
-                <div class="layer twobackground" data-depth="1.00"></div>
-            </div>
                     <li class="col-md-4 pluspadd">
                         <div>
                             <img src="http://placehold.it/140x140" class="img-responsive center-block img-circle" alt="Responsive image">
@@ -126,11 +123,12 @@
                             </div>
                         </div>
                     </li>
-                    
-                    
                 </ul>
             </div>
         </section>
+        <div class="container-fluid para-div scene" id="scene">
+                <div class="layer twobackground" data-depth="0.03"></div>
+            </div>
         <section class="section-three">
             <div class="container">
                 <hr class="divider-1"></hr>
@@ -177,23 +175,23 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleEmail">Email address</label>
-                        <input type="email" class="form-control" id="exampleEmail" placeholder="Enter email">
+                        <input type="email" class="form-control" id="exampleEmail" placeholder="Enter email" required/>
                     </div>
                     <div class="form-group">
                         <label for="exampleUsername">Username</label>
-                        <input type="username" class="form-control" id="exampleUsername" placeholder="Enter username">
+                        <input  class="form-control" minlength="2" id="exampleUsername" placeholder="Enter username" required/>
                     </div>
                     <div class="form-group">
                         <label for="examplePassword">Password</label>
-                        <input type="password" class="form-control" id="examplePassword" placeholder="Enter password">
+                        <input type="password" minlength="8" class="form-control" id="examplePassword" placeholder="Enter password" required/>
                     </div>
                     <div class="form-group">
                         <label for="exampleFullName">Full name</label>
-                        <input type="full-name" class="form-control" id="exampleFullName" placeholder="Enter full name">
+                        <input class="form-control" id="exampleFullName" placeholder="Enter full name" required/>
                     </div>
                     <div class="checkbox">
                         <label>
-                           <input type="checkbox"> I agree
+                           <input type="checkbox" required/> I agree
                         </label>
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
@@ -210,14 +208,16 @@
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.parallax.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script>
-      $('.dropdown-menu').dropdown('toggle');
-        
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
 
-      
-      $('#scene').parallax();
-     
-    </script>
+
+
+            $('#scene').parallax();
+            $("form").validate();
+            
+
+        </script>
 </body>
 </html>

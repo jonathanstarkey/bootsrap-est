@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <script src="js/pace.min.js"></script>
+    <link href="css/dataurl.css" rel="stylesheet">
     <title>My Bootsrap Test Site</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="mybootstrapstyle.css" rel="stylesheet" type="text/css">
@@ -87,14 +89,13 @@
                 </a>
             </div>
         </header>
-        <section class="section-two" >
+        <div id="parallax-window"></div>
+        <section class="section-two">
             
-            <div class="container" >
-                <ul class="row">
-                    <div class="container-fluid para-div scene" id="scene">
-                <div class="layer twobackground" data-depth="1.00"></div>
-            </div>
-                    <li class="col-md-4 pluspadd">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pluspadd">
                         <div>
                             <img src="http://placehold.it/140x140" class="img-responsive center-block img-circle" alt="Responsive image">
                             <div class="caption text-center">
@@ -103,8 +104,8 @@
                                 <p><a href="#" class="btn btn-default" role="button">View Details  &#187;</a></p>
                             </div>
                         </div>
-                    </li>
-                    <li class="col-md-4 pluspadd">
+                    </div>
+                    <div class="col-md-4 pluspadd">
                         <div>
                             <img src="http://placehold.it/140x140" class="img-responsive center-block img-circle" alt="Responsive image">
                             <div class="caption text-center">
@@ -113,8 +114,8 @@
                                 <p><a href="#" class="btn btn-default" role="button">View Details  &#187;</a></p>
                             </div>
                         </div>
-                    </li>
-                    <li class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                         <div>
                             <img src="http://placehold.it/140x140" class="img-responsive center-block img-circle" alt="Responsive image">
                             <div class="caption text-center">
@@ -123,10 +124,8 @@
                                 <p><a href="#" class="btn btn-default" role="button">View Details  &#187;</a></p>
                             </div>
                         </div>
-                    </li>
-                    
-                    
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section-three">
@@ -170,6 +169,35 @@
                 <hr class="divider-2"></hr>
             </div>
         </section>
+        <section class="section-four">
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleEmail">Email address</label>
+                        <input type="email" class="form-control" id="exampleEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleUsername">Username</label>
+                        <input type="username" class="form-control" id="exampleUsername" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="examplePassword">Password</label>
+                        <input type="password" class="form-control" id="examplePassword" placeholder="Enter password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFullName">Full name</label>
+                        <input type="full-name" class="form-control" id="exampleFullName" placeholder="Enter full name">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                           <input type="checkbox"> I agree
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <hr class="divider-2"></hr>
+            </div>
+        </section>
         <footer class="container">
             <p class="pull-right"><a>Back to top</a></p>
             <p>&copy;2014 Company, Inc. &#183; <a href="#"> Privacy </a>&#183;<a href="#"> Terms </a></p>
@@ -179,13 +207,10 @@
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.parallax.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script>
+    <script type="text/javascript" src="js/bootstrap.min.js">
       $('.dropdown-menu').dropdown('toggle');
-        
-
       
-      $('#scene').parallax();
+      $('#parallax-window').parallax({imageSrc:'/images/Yosemite-2.jpg'});
      
     </script>
 </body>

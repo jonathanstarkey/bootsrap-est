@@ -52,21 +52,20 @@
 
 
 
-#scene{
+.para-div{
     height: 400px;
-    overflow: hidden;
+    position: relative;
+
 }
 
 
 .twobackground {
-        position: absolute;
-        height: 820px;
-        width: 2500;
-        left: -5%;
-        top: -5%;
+        height: 400px;
     
-        background: url(images/Rolling-Waves.jpg) no-repeat 50% 100%;
-        background-size: cover;
+        background-image: url(images/Yosemite-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
         
 
 }
